@@ -1,0 +1,68 @@
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(116.2deg, #7CCCED 9.22%, #DFE0CA 85.3%);
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+.banner__info > h1 {
+    position: absolute;
+    width: 567px;
+    height: 161px;
+    left: 218px;
+    top: 244px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #000000;
+}
+
+.banner__info > h5 {
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    left: 285px;
+    top: 458px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2em;
+
+    color: #000000;
+}
+
+.banner__info > button {
+    position: absolute;
+    width: 256px;
+    height: 57px;
+    left: 357px;
+    top: 611px;
+    color: #000000;
+    text-transform: none;
+    background: linear-gradient(95.18deg, rgba(236, 193, 237, 0.46) 17.37%, #EA99EC 75.82%);
+    box-shadow: 0px 4px 50px #D9B8E8;
+    border-radius: 26px;
+}
+
+.banner__info > button:hover {
+    background-color: #7CCCED;
+    color: #DFE0CA;
+    
+}
+
+/* .banner__info > img{
+    object-fit: contain;
+    position: absolute;
+    width: 617px;
+    height: 631px;
+    left: 768px;
+    top: 100px;
+} */
