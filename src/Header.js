@@ -3,13 +3,18 @@ import './Header.css'
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import {
+  Link
+} from "react-router-dom";
 function Header() {
   return (
     <div className="header">
+      <Link to='/' onClick={() => window.location.href="/"}>
         <img className="header__icon" 
             src="https://samgau.com/images/logo/mainlogo_g_b.png"
             alt=""
         />
+      </Link>
         
         <div className='header__center'>            
             <input type="text"/>

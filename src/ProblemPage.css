@@ -1,0 +1,20 @@
+.problemPage__info {
+    padding: 20px;
+  }
+
+.problemPage__info > p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.problemPage__info > h1 {
+    margin-bottom: 30px;
+}
+
+.problemPage__info > button {
+    border-radius: 30px;
+    text-transform: inherit;
+    margin: 5px;
+    color: rgb(34, 34, 34);
+    background-color: rgb(255, 255, 255);
+  }
