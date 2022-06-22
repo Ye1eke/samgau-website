@@ -5,6 +5,7 @@ import Header from './Header'
 import Footer from './Footer'
 import ProblemPage from './ProblemPage'
 import React from "react";
+import Checkout from "./Checkout"
 import {
   BrowserRouter as Router,
   Switch,
@@ -18,6 +19,11 @@ function App() {
       <Header />
 
         <Switch>
+
+          <Route path='/checkout'>
+            <Checkout />
+          </Route>
+
           <Route path='/problem'>
             <ProblemPage />
           </Route>
@@ -26,7 +32,6 @@ function App() {
             <Home />
           </Route>
 
-          
         </Switch>
         
       <Footer />
