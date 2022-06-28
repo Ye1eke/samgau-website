@@ -3,6 +3,8 @@ import './Subtotal.css'
 import CurrencyFormat from 'react-currency-format'
 import { Button } from "@mui/material"
 import {useStateValue} from './StateProvider';
+import { getBasketTotal } from './reducer';
+
 function Subtotal() {
 
   const [{basket}, dispatch] = useStateValue();
@@ -13,7 +15,7 @@ function Subtotal() {
         renderText={(value) => (
           <>
             <p>
-              Итого ({basket.length} вещей): <strong>{0}</strong>
+              Итого ({basket?.length} вещей): <strong>{value}</strong>
             </p>
             <small className="subtotal__gift">
               <input type="checkbox" /> Подарок включен к этому заказу
@@ -21,14 +23,14 @@ function Subtotal() {
           </>
         )}
         decimalScale={2}
-        value={0} // Part of the homework
+        value={getBasketTotal(basket)} 
         displayType={"text"}
         thousandSeparator={true}
         prefix={"b.p"}
       />
     <button>
         Оформления Заказа
-    </button>
+    </button> 
     </div>
   )
 }

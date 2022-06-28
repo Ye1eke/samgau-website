@@ -7,17 +7,19 @@ import {
 import { useHistory } from 'react-router-dom';
 
 function Banner() {
-
+ 
   return (
     <div className='banner'>
         <div className='banner__info'>
             <h1>Выполняйте Задачи Зарабатывайте Бонусы Получайте Подарки</h1>
             <h5></h5>
-            <Button onClick={() => {window.location.href="/problem"}} variant='outlined'>Задачи!</Button>
+             
+            <Button variant='outlined'>Задачи!</Button>
             
 
             {/* <img className='banner__photo' src='https://pngroyale.com/wp-content/uploads/2022/04/Cute-Husky-PNG-Image-768x553.png'
-            /> */}
+            /> 
+            onClick={() => {window.location.href="/problem"}}*/}
         </div>
 
     </div>
